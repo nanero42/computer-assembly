@@ -6,12 +6,9 @@
           <object data="../../../assets/img/logo.svg" width="40" height="40" class="logo"></object>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Курсы</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Расписание</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Преподаватели</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Рассылка</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              <li class="menu__item" *ngFor="let item of menu__item">
+                <a href="#" class="menu__link">{{item}}</a>
+              </li>
             </ul>
           </nav>
           <button class="login">Зайти в кабинет</button>

@@ -6,4 +6,13 @@ import { Component } from "@angular/core";
   styleUrls: ['./main.component.scss']
 })
 
-export class MainComponent { }
+export class MainComponent {
+  menu__item = [
+    'Главная',
+    'Курсы',
+    'Расписание',
+    'Преподаватели',
+    'Рассылка',
+    'Контакты',
+  ]
+}
