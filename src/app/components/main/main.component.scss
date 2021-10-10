@@ -93,3 +93,118 @@
   line-height: 23px;
   opacity: .4;
 }
+
+.header__bottom {
+  background-color: var(--color-cod-gray);
+}
+
+.header__bottom_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.order,
+.students {
+  margin-right: 81px;
+}
+
+.order {
+  font-family: 'Roboto-Bold';
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 30px;
+  background: linear-gradient(270deg, var(--color-soft-orange-1), var(--color-soft-orange-2));
+  border-radius: 50px;
+}
+
+.students {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template: 
+  "all all_num"
+  "done done_num";
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  p:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.students__amount {
+  padding-right: 30px;
+  opacity: .4;
+}
+
+.students__amount_all {
+  grid-area: all;
+}
+
+.students__amount_done {
+  grid-area: done;
+}
+
+.students__all_num,
+.students__done_num,
+.students__amount_num {
+  margin: auto 0;
+}
+
+.students__all_num {
+  grid-area: all_num;
+}
+
+.students__done_num {
+  grid-area: done_num;
+}
+
+.salary {
+  width: 714px;
+}
+
+.salary__inner {
+  display: flex;
+}
+
+.salary__num {
+  opacity: 1;
+}
+
+.salary__decor_inner {
+  display: flex;
+  width: 100%;
+  height: 6px;
+  padding-bottom: 5px;
+}
+
+.salary__decor_current,
+.salary__decor_max {
+  height: 100%;
+}
+
+.salary__decor_current {
+  width: 62%;
+  background: linear-gradient(270deg, var(--color-soft-orange-1), var(--color-soft-orange-2));
+}
+
+.salary__decor_max {
+  width: 38%;
+  background: var(--color-white);
+}
+
+.salary__amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.salary__amount_start,
+.salary__amount_end {
+  opacity: .4;
+}

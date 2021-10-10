@@ -40,14 +40,32 @@
       </div>
       <div class="header__bottom">
         <div class="header__bottom_inner">
-          <button class="order"></button>
+          <button class="order">Заказать курс</button>
           <div class="students">
-            <p>Учеников всего: <span><strong>200</strong></span></p>
-            <p>Успешно закончили курс: <span><strong>190</strong></span></p>
+            <p class="students__amount students__all">Учеников всего:</p>
+            <span class="students__all_num">
+              <strong>200</strong>
+              </span>
+            <p class="students__amount students__done">Успешно закончили курс:</p>
+            <span class="students__done_num">
+              <strong>190</strong>
+              </span>
           </div>
           <div class="salary">
-             <p>Заработано учениками <span><strong class="salary__num">400000</strong></span></p>
-             <div class="salary__decor"></div>
+             <div class="salary__inner">
+              <p class="students__amount">Заработано учениками</p>
+              <span class="students__amount_num" ><strong class="salary__num">400 000₽</strong></span>
+             </div>
+             <div class="salary__decor">
+               <div class="salary__decor_inner">
+                 <span class="salary__decor_current"></span>
+                 <span class="salary__decor_max"></span>
+               </div>
+               <div class="salary__amount">
+                 <span class="salary__amount_start">0</span>
+                 <span class="salary__amount_end">1 000 000₽</span>
+               </div>
+             </div>
           </div>
         </div>
       </div>
